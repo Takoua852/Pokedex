@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+}
+
+.big-container {
+    position: fixed;
+    background: url(img/pokemon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#pokedex {
+    min-height: 50vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    border-radius: 16px;
+}
+
+.idnumber {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pokedexCard {
+    width: 400px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#info-container {
+    background-color: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    min-height: 100px;
+    margin-top: -40px;
+    width: 400px;
+    border: 1px solid lightgray;
+    height: 500px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    border-bottom: 1px solid lightgrey;
+}
+
+nav a {
+    text-decoration: none;
+    color: initial;
+    padding-bottom: 20px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+}
+
+.moves {
+
+    overflow: auto;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.movesDetail {
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movesDetail:hover {
+
+    box-shadow: 0 0 12px #0e0d0d;
+}
+
+.evolution-div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    padding: 24px;
+}
+
+.evol-img {
+    object-fit: contain;
+    width: 150px;
+    filter: drop-shadow(0 0 6px #000000);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.stats-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#Pokemon-Card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 150px;
+    padding: 20px;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+img#pokemonImage {
+    width: 50%;
+    filter: drop-shadow(0 0 19px #000000);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+img#pokemonImage:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutTable {
+    display: flex;
+    padding-bottom: 16px;
+    gap: 50px;
+    align-items: center;
+}
+
+.openendCard {
+    width: 300px;
+    height: auto;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.td-padding {
+    padding-bottom: 16px;
+    padding-right: 70px;
+}
+
+.td-progress {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 16px;
+}
+
+.div-close {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+    padding: 20px;
+}
+
+.loadbutton {
+    position: fixed;
+    bottom: 0;
+    padding: 10px 50px;
+    filter: invert(1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+form {
+    display: inline-block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pseudo-search {
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border: 0;
+    background-color: transparent;
+    width: 200px;
+    padding: 5px 15px;
+
+    &:focus {
+        /* // Unsure how to fix this... */
+        outline: none;
+    }
+}
+
+button,
+i {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+select {
+    border: none;
+}
+
+
+/* custom scrollbar */
+/* width */
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 0, 0.699);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #db0707;
+}
